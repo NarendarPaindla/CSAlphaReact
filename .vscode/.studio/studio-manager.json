@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openFile src/App.jsx 1"
+    },
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openSimpleBrowser https://${STUDIO_HOST_ID}-3000.${STUDIO_HOST}",
+      "delay": 2000
+    },
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openTerminal",
+      "cmdArgs": [
+        "npm install && npm run dev",
+        {
+          "name": "react",
+          "location": 1
+        }
+      ],
+      "delay": 2500
+    }
+  ],
+  "simpleBrowserDefaultAppUrl": "https://${STUDIO_HOST_ID}-3000.${STUDIO_HOST}"
+}

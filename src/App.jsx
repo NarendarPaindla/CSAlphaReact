@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import './App.css'
+import Greetings from './components/Greetings';
 
 function App(){
   const name="iotalpha";
@@ -13,6 +14,7 @@ return(
 <ul>
   {items.map(item=><li key={item}>{item}</li>)}
 </ul>
+<Greetings/>
 </>
 );
 }

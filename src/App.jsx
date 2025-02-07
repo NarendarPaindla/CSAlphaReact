@@ -2,7 +2,7 @@ import Header from './components/Header';
 import './App.css'
 import Greetings from './components/Greetings';
 import Counter from './components/Counter';
-
+import ClickHandler from './components/ClickHandler';
 function App(){
   const name="iotalpha";
   const course="react";
@@ -17,6 +17,7 @@ return(
 </ul>
 <Greetings/>
 <Counter/>
+<ClickHandler/>
 </>
 );
 }

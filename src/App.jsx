@@ -2,6 +2,7 @@
 import './App.css'
 import MouseEventsDemo from './components/MouseEventsDemo';
 import KeyboardEventsDemo from './components/KeyboardEventsDemo';
+import DragAndDropDemo from './components/DragAndDropDemo.jsx';
 function App(){
   const name="iotalpha";
   const course="react";
@@ -19,6 +20,7 @@ return(
 <ClickHandler/> */}
 <MouseEventsDemo/>
 <KeyboardEventsDemo/>
+<DragAndDropDemo/>
 </>
 );
 }

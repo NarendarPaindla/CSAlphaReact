@@ -1,7 +1,7 @@
 
 import './App.css'
 import MouseEventsDemo from './components/MouseEventsDemo';
-
+import KeyboardEventsDemo from './components/KeyboardEventsDemo';
 function App(){
   const name="iotalpha";
   const course="react";
@@ -18,6 +18,7 @@ return(
 <Counter/>
 <ClickHandler/> */}
 <MouseEventsDemo/>
+<KeyboardEventsDemo/>
 </>
 );
 }

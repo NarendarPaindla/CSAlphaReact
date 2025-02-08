@@ -1,15 +1,14 @@
-import Header from './components/Header';
+
 import './App.css'
-import Greetings from './components/Greetings';
-import Counter from './components/Counter';
-import ClickHandler from './components/ClickHandler';
+import MouseEventsDemo from './components/MouseEventsDemo';
+
 function App(){
   const name="iotalpha";
   const course="react";
   const items=['item1','item2', 'item3','item4'];
 return( 
 <>
-<Header name={name} />
+{/* <Header name={name} />
 <h1>Welcome</h1>
 <p>Here {name} is learning {course}</p>
 <ul>
@@ -17,7 +16,8 @@ return(
 </ul>
 <Greetings/>
 <Counter/>
-<ClickHandler/>
+<ClickHandler/> */}
+<MouseEventsDemo/>
 </>
 );
 }

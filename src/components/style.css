@@ -1,0 +1,58 @@
+:root {
+    font-family: system-ui, -apple-system,
+      /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: #3d3d3d;
+  }
+  
+  body {
+    margin: 0 auto;
+    background-color: #f3f4f6;
+  }
+  
+  .cardcontainer {
+    width: 1400px;
+    margin: 20px auto;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin: 20px 0 30px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: inline-block;
+    width: 380px;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 50px 20px;
+    text-align: center;
+  }
+  
+  .card-img {
+    text-align: center;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+    color: #374151;
+    margin: 10px 0;
+  }
+  
+  .rounded {
+    border-radius: 50%;
+    border: 2px solid #6a7280;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .info {
+    margin: 10px 0;
+    font-size: 0.75rem;
+    color: #6a7280;
+  }
+  

@@ -1,27 +1,22 @@
-import React from "react";
-import contacts from "./contacts";
-import Card from "./Card";
-import './style.css'
-function addCard(contact) {
-  return (
-    <Card
-      key={contact.id}
-      name={contact.name}
-      img={contact.imgURL}
-      phone={contact.phone}
-      email={contact.email}
-      company={contact.company}
-    />
-  );
-}
-
-function App() {
-  return (
-    <div className="cardcontainer">
-      <h1 className="heading">My Contacts</h1>
-      <>{contacts.map(addCard)}</>
+import React,{useState} from 'react';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+function App(){
+  const [matchid,setMatchId]=useState("40381");
+  const [matchData, setMatchData]=useState(null);
+  const fetchData= async()=>{
+    try{
+      const response= await fetch();
+    }
+  }
+  return(
+ <div className='app'>  
+    <Header/>
+    <Navigation/>
+    <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;

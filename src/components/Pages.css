@@ -1,0 +1,46 @@
+/* Pages.css */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen for laptop */
+    font-size: 30px; /* Bigger text for laptop */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px; /* Adjusted for fixed navbar */
+  }
+  
+  /* Different background colors for each page */
+  .home {
+    background-color: #4caf50;
+  }
+  
+  .dashboard {
+    background-color: #ff9800;
+  }
+  
+  .about {
+    background-color: #673ab7;
+  }
+  
+  .contact {
+    background-color: #e91e63;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .page-container {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-container {
+      font-size: 24px;
+      padding: 20px;
+    }
+  }
+  

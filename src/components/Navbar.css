@@ -1,0 +1,47 @@
+/* Navbar.css */
+.navbar {
+    background-color: #007bff;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increased spacing for laptop screens */
+    margin: 0;
+    padding: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 22px; /* Bigger font for better visibility */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #dcdcdc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .nav-list {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  

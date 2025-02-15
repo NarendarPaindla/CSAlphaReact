@@ -1,49 +1,25 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import FormInput from "./components/FormInput";
-import './st.css';
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Dashboard from "./components/Dashboard";
+import About from "./components/About";
+import Contact from "./components/Contact";
+
+
 function App() {
-  const [isMousedOver, setMouseOver] = React.useState(false);
-  const [headingText, setHeadingText] = React.useState("Fill the Form");
-  const [isClicked, setButton] = React.useState(false);
 
-  function MouseOutEvent() {
-    setMouseOver(false);
-  }
-
-  function MouseOverEvent() {
-    setMouseOver(true);
-  }
-
-  function ClickEvent() {
-    setHeadingText("Form has been filled");
-    setButton(true);
-  }
 
   return (
-    <div className="container">
-      <div className="incrementBox">
-        <h1>{headingText}</h1>
-        <div style={{ display: isClicked ? "none" : "inline-block" }}>
-          <FormInput
-            label="Username"
-            labelfor="pass"
-            inputid="uname"
-            inputname="uname"
-            inputtype="text"
-            inputplaceholder="Enter your username"
-          />
-          <button
-            style={{ backgroundColor: isMousedOver ? "#1F1f1f" : "#3E4684" }}
-            onClick={ClickEvent}
-            onMouseOver={MouseOverEvent}
-            onMouseOut={MouseOutEvent}
-          >
-            Sumbit Details
-          </button>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
